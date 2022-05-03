@@ -1,1 +1,6 @@
-
+@generic{
+  citekey,
+  author       = "Chiara Ballanti",
+  title        = "Bachelor-degree-thesis",
+  howpublished = "https://github.com/Ballants/Bachelor-degree-thesis"
+}
