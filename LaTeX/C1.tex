@@ -1,0 +1,39 @@
+\chapter{Introduzione}
+\label{chap:1}
+
+Le tecniche di Machine Learning (ML), specialmente i recenti modelli di Deep Learning (DL), stanno progredendo rapidamente e sono sempre più impiegate in vari ambiti.
+
+Le Convolutional Neural Networks (CNNs) sono tra i più importanti tipi di modelli DL utilizzati per l'elaborazione e l'analisi delle immagini, poiché sono molto efficaci nell'estrazione di caratteristiche fondamentali dall'immagine, ovvero parti o schemi di un oggetto che aiutano ad identificarlo.
+
+Alcune delle discipline più rappresentative che usano il DL per compiti di Computer Vision (CV) sono la robotica, i veicoli autonomi, la biometria, il riconoscimento dei volti e la classificazione delle immagini.
+
+In seguito al suo successo, il DL è diventato un utile strumento di supporto per l'analisi di immagini mediche, poiché permette ai medici di svolgere i loro compiti in modo più efficiente e in minor tempo.
+Nell'analisi delle immagini mediche, gli algoritmi di DL possono analizzare ed elaborare la risonanza magnetica, la TAC, i raggi X e le immagini della pelle per la diagnosi del cancro, il rilevamento della retinopatia, la classificazione delle malattie polmonari, i tumori del cervello, ecc.
+Anche se gli algoritmi di DL riescono a raggiungere performance molto alte, a volte anche superiori a quelle umane, alcuni studi hanno dimostrato che possono essere vulnerabili agli adversarial attacks. 
+
+Gli adversarial attacks vengono applicati introducendo intenzionalmente delle piccole perturbazioni nei dati di input dell'algoritmo di DL. 
+In %[bibl: https://arxiv.org/pdf/1312.6199.pdf] 
+\cite{szegedy2013intriguing} gli autori hanno dimostrato che una piccolissima perturbazione su un'immagine può portare il modello di DL a conclusioni errate. 
+La perturbazione aggiunta ad un'immagine pulita può essere casuale oppure calcolata al fine di massimizzare l'errore di predizione. 
+Questi tipi di attacchi sono particolarmente efficaci perché le perturbazioni sono impercettibili all'occhio umano, rendendo così, per una persona, le immagini perturbate indistinguibili da quelle pulite.
+
+Inoltre, esiste un fenomeno denominato \textbf{adversarial transferability} %[bibl: https://arxiv.org/pdf/1605.07277.pdf] 
+\cite{papernot2016transferability} che permette a degli adversarial examples, appositamente creati per un modello, di poterne ingannare efficacemente anche altri.
+
+Gli adversarial attacks hanno sollevato, nella comunità di ricerca, preoccupazioni sulla sicurezza e affidabilità delle DNN e sull'opportunità di delegare diagnosi mediche a questi modelli, che possono essere facilmente ingannati. 
+La consapevolezza di queste problematiche ha indotto la comunità di ricerca a cercare delle soluzioni per rendere questi modelli più robusti e sicuri.
+
+\bigskip
+Il \hyperref[chap:2]{Capitolo~\ref*{chap:2}} presenta l'analisi della letteratura effettuata nell'ambito di questo lavoro di tesi.
+
+\bigskip
+Nel \hyperref[chap:3]{Capitolo~\ref*{chap:3}} viene spiegato il problema nello specifico e le motivazioni per cui questi attacchi vengono effettuati anche in ambito medico. In particolare, vengono illustrati in dettaglio gli attacchi presi in esame durante il lavoro di tesi e alcune delle tecniche di difesa applicate al fine di mitigarli. 
+
+\bigskip
+Nel \hyperref[chap:4]{Capitolo~\ref*{chap:4}} vengono descritti gli esperimenti sugli attacchi: i datasets, le architetture dei modelli CNN e gli esiti prodotti dagli attacchi.
+
+\bigskip
+Nel \hyperref[chap:5]{Capitolo~\ref*{chap:5}} vengono esposti i risultati degli esperimenti sulla difesa dei modelli scelti.
+
+\bigskip
+Per visionare il codice sorgente implementato durante il lavoro di tesi e tutti gli esperimenti effettuati si faccia riferimento a GitHub \cite{MyGitHub}.
