@@ -1,0 +1,105 @@
+\documentclass[Lau, oneside, noexaminfo]{sapthesis}
+
+\usepackage[italian]{babel} 
+\usepackage[utf8]{inputenx}
+\usepackage{indentfirst}
+\usepackage{microtype}
+\usepackage{amsmath}
+
+\usepackage{calligra}
+\usepackage[T1]{fontenc}
+\usepackage{amsfonts}
+\usepackage{subfig}
+\usepackage{multirow}
+\usepackage{pgfplots}
+\usepackage{cite}
+
+%\usepackage[none]{hyphenat}
+
+%\usepackage{chemformula}
+%\usepackage{setspace}
+%\usepackage{yfonts,color}
+%\usepackage{siunitx}
+%\usepackage{comment}
+%\usepackage{multirow}
+%\usepackage{varioref}
+%\usepackage[bottom]{footmisc}
+%\usepackage{wrapfig}
+\usepackage{float}
+%\usepackage{type1cm}
+\usepackage{lettrine}
+\linespread{0.9}
+%\usepackage{chngcntr}
+\usepackage[nottoc, notlof, notlot]{tocbibind}
+%\onehalfspacing
+%\counterwithout{footnote}{chapter}
+\usepackage{hyperref}
+\hypersetup{
+			%hyperfootnotes=true,			
+			%bookmarks=true,			
+			colorlinks=true,
+			linkcolor=red,
+                        linktoc=page,
+			anchorcolor=black,
+			citecolor=red,
+			urlcolor=blue,
+			pdftitle={A sample Bachelor's thesis for Sapienza Università di Roma},
+			pdfauthor={FirstName LastName},
+			pdfkeywords={thesis, sapienza, roma, university}
+			}
+
+\title{Reti neurali convoluzionali per il riconoscimento di immagini mediche: analisi di attacchi di tipo adversarial e delle tecniche di difesa}
+\author{Chiara Ballanti}
+\IDnumber{1844613}
+\course[]{Informatica}
+\courseorganizer{Facoltà di Ingegneria dell’informazione, informatica e statistica}
+\submitdate{2020/2021}
+\copyyear{2021}
+\advisor{Prof. Emiliano Casalicchio}                                                                                            
+\authoremail{ballanti.1844613@studenti.uniroma1.it}
+
+%we refer to http://ctan.mirrorcatalogs.com/macros/latex/contrib/sapthesis/sapthesis-doc.pdf for an exhaustive description of the sapthesis documentclass.
+
+
+\begin{document}
+
+\frontmatter
+\maketitle
+
+    \begin{abstract}
+    Negli ultimi anni le Deep Neural Networks (DNNs) sono diventate sempre più popolari in numerose discipline come, ad esempio, Computer Vision (CV) e Natural Language Processing (NLP).
+    
+    L'evoluzione dei sistemi hardware ha contribuito allo sviluppo di potenti modelli di Deep Learning (DL) in grado di affrontare problemi complessi e impegnativi.
+    
+    Una delle sfide più importanti nel campo della CV è l'analisi delle immagini mediche - come la risonanza magnetica (MRI), i raggi X, la tomografia computerizzata (CT), la fondoscopia - utilizzando le Convolutional Neural Networks (CNNs) per la diagnosi di patologie o il rilevamento di disturbi specifici.
+    
+    Il corretto funzionamento di questi modelli può migliorare significativamente l'efficienza dei sistemi sanitari.
+    
+    Tuttavia, studi recenti hanno dimostrato che i modelli CNN sono vulnerabili agli adversarial attacks e che possono essere facilmente ingannati attraverso perturbazioni delle immagini impercettibili all'occhio umano.
+    
+    L'oggetto di questa tesi è lo studio di alcune tecniche esistenti di adversarial attacks, il loro rilevamento e le tecniche di difesa per le immagini mediche.
+    \end{abstract}
+
+\tableofcontents
+
+\mainmatter
+
+\include{C1}
+
+\include{C2}
+
+\include{C3}
+
+\include{C4}
+
+\include{C5}
+
+\include{Conclusioni}
+
+\backmatter
+\phantomsection
+
+\bibliographystyle{sapthesis}
+\bibliography{Bibliografia}
+
+\end{document}
